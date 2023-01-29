@@ -285,8 +285,8 @@ options_templates.update(options_section(('saving-images', "Saving images/grids"
     "grid_prevent_empty_spots": OptionInfo(False, "Prevent empty spots in grid (when set to autodetect)"),
     "n_rows": OptionInfo(-1, "Grid row count; use -1 for autodetect and 0 for it to be same as batch size", gr.Slider, {"minimum": -1, "maximum": 16, "step": 1}),
 
-    "enable_pnginfo": OptionInfo(True, "Save text information about generation parameters as chunks to png files"),
-    "save_txt": OptionInfo(False, "Create a text file next to every image with generation parameters."),
+    "enable_pnginfo": OptionInfo(False, "Save text information about generation parameters as chunks to png files"),
+    "save_txt": OptionInfo(True, "Create a text file next to every image with generation parameters."),
     "save_images_before_face_restoration": OptionInfo(False, "Save a copy of image before doing face restoration."),
     "save_images_before_highres_fix": OptionInfo(False, "Save a copy of image before applying highres fix."),
     "save_images_before_color_correction": OptionInfo(False, "Save a copy of image before applying color correction to img2img results"),
@@ -305,13 +305,13 @@ options_templates.update(options_section(('saving-images', "Saving images/grids"
 
 options_templates.update(options_section(('saving-paths', "Paths for saving"), {
     "outdir_samples": OptionInfo("", "Output directory for images; if empty, defaults to three directories below", component_args=hide_dirs),
-    "outdir_txt2img_samples": OptionInfo("outputs/txt2img-images", 'Output directory for txt2img images', component_args=hide_dirs),
-    "outdir_img2img_samples": OptionInfo("outputs/img2img-images", 'Output directory for img2img images', component_args=hide_dirs),
-    "outdir_extras_samples": OptionInfo("outputs/extras-images", 'Output directory for images from extras tab', component_args=hide_dirs),
+    "outdir_txt2img_samples": OptionInfo("/content/gdrive/MyDrive/AI/outputs/txt2img-images", 'Output directory for txt2img images', component_args=hide_dirs),
+    "outdir_img2img_samples": OptionInfo("/content/gdrive/MyDrive/AI/outputs/img2img-images", 'Output directory for img2img images', component_args=hide_dirs),
+    "outdir_extras_samples": OptionInfo("/content/gdrive/MyDrive/AI/outputs/extras-images", 'Output directory for images from extras tab', component_args=hide_dirs),
     "outdir_grids": OptionInfo("", "Output directory for grids; if empty, defaults to two directories below", component_args=hide_dirs),
-    "outdir_txt2img_grids": OptionInfo("outputs/txt2img-grids", 'Output directory for txt2img grids', component_args=hide_dirs),
-    "outdir_img2img_grids": OptionInfo("outputs/img2img-grids", 'Output directory for img2img grids', component_args=hide_dirs),
-    "outdir_save": OptionInfo("log/images", "Directory for saving images using the Save button", component_args=hide_dirs),
+    "outdir_txt2img_grids": OptionInfo("/content/gdrive/MyDrive/AI/outputs/txt2img-grids", 'Output directory for txt2img grids', component_args=hide_dirs),
+    "outdir_img2img_grids": OptionInfo("/content/gdrive/MyDrive/AI/outputs/img2img-grids", 'Output directory for img2img grids', component_args=hide_dirs),
+    "outdir_save": OptionInfo("/content/gdrive/MyDrive/AI/outputs/log/images", "Directory for saving images using the Save button", component_args=hide_dirs),
 }))
 
 options_templates.update(options_section(('saving-to-dirs', "Saving to a directory"), {
